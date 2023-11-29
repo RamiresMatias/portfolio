@@ -10,7 +10,9 @@ menuToggle.addEventListener("click", () => hiddenMenu())
 
 anchorEl.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}))
 
-navbarLinks.forEach(nav => nav.addEventListener('click', () => hiddenMenu()))
+navbarLinks.forEach(nav => nav.addEventListener('click', () => {
+  headerEl.classList.contains('on') && hiddenMenu()
+}))
 
 
 window.addEventListener('scroll', () => {

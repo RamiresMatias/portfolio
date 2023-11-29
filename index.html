@@ -11,7 +11,7 @@
 
 <body>
   <div class="container">
-    <header class="header on">
+    <header class="header">
       <a href="#" class="logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 40" fill="none">
           <path
@@ -32,7 +32,7 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#content" class="link__item">Home</a></li>
+          <li><a href="#" class="link__item">Home</a></li>
           <li><a href="#about" class="link__item">Sobre mim</a></li>
           <li><a href="#jobs" class="link__item">Portfolio</a></li>
           <li><a href="#skills" class="link__item">Skills</a></li>
@@ -42,7 +42,7 @@
       </nav>
     </header>
 
-    <section class="content" id="content">
+    <section class="content" id="">
       <div class="salutation">
         <div class="tag">👋 Saudações!</div>
         <div class="name">Ramires Matias</div>
@@ -274,21 +274,7 @@
       <div class="title" style="margin-bottom: 100px">
         Trabalhos e projetos
       </div>
-      <div class="projects">
-        <div class="projects__item">
-          <div class="projects__item--title">Move.it</div>
-          <div class="projects__item--description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s,
-          </div>
-          <div class="projects__item--tags">
-            <div class="tag">Vuejs</div>
-            <div class="tag">Typescript</div>
-          </div>
-          <div class="projects__item--image"></div>
-        </div>
-      </div>
+      <div class="projects"></div>
     </section>
     <section class="skills" id="skills">
       <div class="tag" style="margin-bottom: 24px">
@@ -470,7 +456,7 @@
       <div class="experience">
         <div class="professional">
           <div class="title-experience">Área profissional</div>
-          <div class="subtitle">2019 · Atualmente</div>
+          <div class="subtitle" style="margin-bottom: 60px">2019 · Atualmente</div>
           <div class="card-experience card-experience--active">
             <div class="card-experience--title">Desenvolvedor Front-end na Conexa</div>
             <div class="card-experience--description" style="margin-bottom: 50px;">Desenvolvimento de features na aplicação principal e site com React Js e Typescript, 
@@ -484,7 +470,7 @@
         </div>
         <div class="academic">
           <div class="title-experience">Acadêmica</div>
-          <div class="subtitle">2018 · Atualmente</div>
+          <div class="subtitle" style="margin-bottom: 60px">2018 · Atualmente</div>
           <div class="card-experience">
             <div class="card-experience--title">Desenvolvedor Front-end na Conexa</div>
             <div class="card-experience--description" style="margin-bottom: 50px;">Desenvolvimento de features na aplicação principal e site com React Js e Typescript, 
@@ -568,7 +554,8 @@
       </div>
     </footer>
   </div>
-  <script src="./script.js"></script>
+  <script src="api.js"></script>
+  <script src="events.js"></script>
 </body>
 
 </html>
