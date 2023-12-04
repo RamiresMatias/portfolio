@@ -3,6 +3,8 @@ const sections = document.querySelectorAll('section')
 const navbarLinks = document.querySelectorAll('.header nav ul li a')
 const headerEl = document.querySelector('.header')
 const menuToggle = headerEl.querySelector(".menu-toggle")
+const btnCopy = document.getElementById('button-copy')
+const elTextEmail = document.getElementById('text-email')
 
 let show = true
 
@@ -31,6 +33,9 @@ window.addEventListener('scroll', () => {
   })
 })
 
+btnCopy.addEventListener('click', () => {
+  navigator.clipboard.writeText(elTextEmail.textContent)
+})
 
 const hiddenMenu = () => {
   document.body.style.overflow = show ? "hidden" : "initial"

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --sc-color: rgba(255, 255, 255, 0.50);
+  --color-secondary: rgba(255, 255, 255, 0.50);
   --color-active: rgba(123, 74, 226, 0.50);
   --bg-secondary: rgba(123, 74, 226, 0.20);
   --color-primary: #7B4AE2;
@@ -83,7 +83,7 @@ img {
   padding: 5px;
   font-size: 0.9rem;
   transition: 0.1s;
-  color: var(--sc-color);
+  color: var(--color-secondary);
 }
 
 .header nav a:hover {
@@ -91,7 +91,7 @@ img {
 }
 
 .active-link {
-  color: rgba(123, 74, 226, 0.50);
+  color: var(--color-primary);
 } 
 
 .header li + li {
@@ -132,7 +132,7 @@ img {
 }
 
 .salutation .job-title {
-  color: var(--sc-color);
+  color: var(--color-secondary);
   font-size: 1.25rem;
 }
 
@@ -146,9 +146,11 @@ img {
 .avatar > svg {
   max-width: 510px;
   max-height: 510px;
-  backdrop-filter: blur(20px);
   border-radius: 510.296px;
   background: var(--bg-secondary);
+  -webkit-box-shadow: 0px 0px 23px 0px rgba(123,74,226,1);
+  -moz-box-shadow: 0px 0px 23px 0px rgba(123,74,226,1);
+  box-shadow: 0px 0px 23px 0px rgba(123,74,226,1);
   height: 100%;
   width: 100%;
 }
@@ -158,7 +160,7 @@ img {
   flex-direction: column;
   gap: 15px;
   font-size: 1rem;
-  color: var(--color-active);
+  color: var(--color-primary);
   font-weight: 600;
 }
 
@@ -172,7 +174,7 @@ img {
   border-radius: 16px;
   border: 1px solid rgba(123, 74, 226, 0.50);
   background: transparent;
-  color: var(--color-active);
+  color: var(--color-primary);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -207,7 +209,7 @@ img {
 
 .description .presentation {
   font-size: 1.125rem;
-  color: var(--sc-color);
+  color: var(--color-secondary);
 }
 
 .title {
@@ -262,7 +264,7 @@ img {
 .projects__item--description, .card-experience--description  {
   font-size: 1rem;
   font-weight: 400;
-  color: var(--sc-color);
+  color: var(--color-secondary);
   font-style: normal;
   line-height: normal;
   -webkit-box-orient: vertical;
@@ -340,15 +342,15 @@ img {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  gap: 10px;
 }
 
 .card-experience {
   border-radius: 16px;
   border: 1px solid rgba(123, 74, 226, 0.50);
   padding: 30px;
-  margin-bottom: 64px;
+  margin-bottom: 32px;
   max-width: 580px;
+  width: 100%;
 }
 
 .card-experience--active {
@@ -388,7 +390,7 @@ img {
 
 .subtitle {
   font-size: 1.5rem;
-  color: var(--sc-color);
+  color: var(--color-secondary);
   font-weight: 400;
 }
 
