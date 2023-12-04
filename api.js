@@ -2,7 +2,7 @@ const apiGithub = 'https://api.github.com'
 
 // READ-ONLY TOKEN
 const headers = {
-  'Authorization': `Bearer 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`
+  'Authorization': `Bearer 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`
 }
 
 const projectsEl = document.querySelector('.projects')
