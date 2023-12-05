@@ -226,9 +226,11 @@ img {
 
 .projects {
   display: flex;
+  overflow-x: auto;
   gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+  width: 100%;
+  padding: 20px 0px;
 }
 
 .projects__item {
@@ -237,8 +239,9 @@ img {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  max-width: 300px;
   width: 100%;
+  min-width: 300px;
+  max-width: 300px;
 }
 
 .projects__item:hover {
